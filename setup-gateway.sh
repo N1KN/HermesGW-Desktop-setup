@@ -213,7 +213,7 @@ setup_port() {
     fi
     echo ""
 
-    PORT="${3:-9119}"
+    PORT="${1:-9119}"
 
     local port_in_use=0
     if command -v ss &>/dev/null; then
